@@ -101,6 +101,15 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Ludo Game Colors - Dark */
+    --ludo-red: 0 76% 57%;
+    --ludo-green: 142 69% 47%;
+    --ludo-yellow: 45 93% 47%;
+    --ludo-blue: 207 90% 54%;
+    --game-board: 217.2 32.6% 17.5%;
+    --game-path: 217.2 32.6% 20%;
+    --game-gold: 36 77% 64%;
   }
 }
 
