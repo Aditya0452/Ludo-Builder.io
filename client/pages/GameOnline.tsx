@@ -1,9 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowLeft, Wifi, Users, Globe, Search } from 'lucide-react';
-import { Button } from '../components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
-import { Badge } from '../components/ui/badge';
+import React from "react";
+import { Link } from "react-router-dom";
+import { ArrowLeft, Wifi, Users, Globe, Search } from "lucide-react";
+import { Button } from "../components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "../components/ui/card";
+import { Badge } from "../components/ui/badge";
 
 export default function GameOnline() {
   return (
@@ -14,15 +20,24 @@ export default function GameOnline() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <Link to="/">
-                <Button variant="ghost" size="sm" className="text-white hover:bg-white/10">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-white hover:bg-white/10"
+                >
                   <ArrowLeft className="h-4 w-4 mr-2" />
                   Back to Home
                 </Button>
               </Link>
               <div className="flex items-center space-x-2">
                 <Wifi className="h-5 w-5 text-green-400" />
-                <span className="text-white font-semibold">Online Multiplayer</span>
-                <Badge variant="secondary" className="bg-green-500/20 text-green-400 border-green-500/30">
+                <span className="text-white font-semibold">
+                  Online Multiplayer
+                </span>
+                <Badge
+                  variant="secondary"
+                  className="bg-green-500/20 text-green-400 border-green-500/30"
+                >
                   Connected
                 </Badge>
               </div>
@@ -50,14 +65,19 @@ export default function GameOnline() {
               <div className="flex items-center space-x-3">
                 <Search className="h-8 w-8 text-green-400" />
                 <div>
-                  <CardTitle className="text-white text-2xl">Quick Match</CardTitle>
-                  <CardDescription className="text-green-200">Find opponents instantly</CardDescription>
+                  <CardTitle className="text-white text-2xl">
+                    Quick Match
+                  </CardTitle>
+                  <CardDescription className="text-green-200">
+                    Find opponents instantly
+                  </CardDescription>
                 </div>
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-purple-200">
-                Jump into a game with players of similar skill level. Perfect for quick matches when you want to play right away!
+                Jump into a game with players of similar skill level. Perfect
+                for quick matches when you want to play right away!
               </p>
               <div className="space-y-2">
                 <div className="flex items-center justify-between text-sm">
@@ -66,7 +86,9 @@ export default function GameOnline() {
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-purple-200">Average wait time:</span>
-                  <span className="text-green-400 font-semibold">~30 seconds</span>
+                  <span className="text-green-400 font-semibold">
+                    ~30 seconds
+                  </span>
                 </div>
               </div>
               <Button className="w-full bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white font-semibold py-3">
@@ -82,20 +104,28 @@ export default function GameOnline() {
               <div className="flex items-center space-x-3">
                 <Users className="h-8 w-8 text-blue-400" />
                 <div>
-                  <CardTitle className="text-white text-2xl">Private Room</CardTitle>
-                  <CardDescription className="text-blue-200">Play with friends</CardDescription>
+                  <CardTitle className="text-white text-2xl">
+                    Private Room
+                  </CardTitle>
+                  <CardDescription className="text-blue-200">
+                    Play with friends
+                  </CardDescription>
                 </div>
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-purple-200">
-                Create a private room and invite your friends to join. Share the room code and enjoy exclusive matches!
+                Create a private room and invite your friends to join. Share the
+                room code and enjoy exclusive matches!
               </p>
               <div className="space-y-3">
                 <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold">
                   Create Room
                 </Button>
-                <Button variant="outline" className="w-full border-white/20 text-white hover:bg-white/10">
+                <Button
+                  variant="outline"
+                  className="w-full border-white/20 text-white hover:bg-white/10"
+                >
                   Join Room
                 </Button>
               </div>
@@ -117,24 +147,36 @@ export default function GameOnline() {
           <CardContent>
             <div className="space-y-3">
               {[
-                { rank: 1, name: 'LudoMaster99', wins: 1247, country: '🇮🇳' },
-                { rank: 2, name: 'KingOfDice', wins: 1189, country: '🇺🇸' },
-                { rank: 3, name: 'RoyalPlayer', wins: 1156, country: '🇬🇧' },
-                { rank: 4, name: 'DiceWarrior', wins: 1098, country: '🇨🇦' },
-                { rank: 5, name: 'LudoLegend', wins: 1034, country: '🇦🇺' },
+                { rank: 1, name: "LudoMaster99", wins: 1247, country: "🇮🇳" },
+                { rank: 2, name: "KingOfDice", wins: 1189, country: "🇺🇸" },
+                { rank: 3, name: "RoyalPlayer", wins: 1156, country: "🇬🇧" },
+                { rank: 4, name: "DiceWarrior", wins: 1098, country: "🇨🇦" },
+                { rank: 5, name: "LudoLegend", wins: 1034, country: "🇦🇺" },
               ].map((player) => (
-                <div key={player.rank} className="flex items-center justify-between p-3 bg-white/5 rounded-lg">
+                <div
+                  key={player.rank}
+                  className="flex items-center justify-between p-3 bg-white/5 rounded-lg"
+                >
                   <div className="flex items-center space-x-3">
-                    <span className="text-yellow-400 font-bold text-lg">#{player.rank}</span>
+                    <span className="text-yellow-400 font-bold text-lg">
+                      #{player.rank}
+                    </span>
                     <span className="text-lg">{player.country}</span>
-                    <span className="text-white font-medium">{player.name}</span>
+                    <span className="text-white font-medium">
+                      {player.name}
+                    </span>
                   </div>
-                  <span className="text-green-400 font-semibold">{player.wins} wins</span>
+                  <span className="text-green-400 font-semibold">
+                    {player.wins} wins
+                  </span>
                 </div>
               ))}
             </div>
             <div className="mt-4 text-center">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10">
+              <Button
+                variant="outline"
+                className="border-white/20 text-white hover:bg-white/10"
+              >
                 View Full Leaderboard
               </Button>
             </div>
@@ -144,7 +186,9 @@ export default function GameOnline() {
         {/* Coming Soon Features */}
         <Card className="mt-8 bg-gradient-to-br from-purple-900/50 to-pink-900/50 border-purple-500/30 backdrop-blur-sm">
           <CardHeader>
-            <CardTitle className="text-white text-xl text-center">Coming Soon</CardTitle>
+            <CardTitle className="text-white text-xl text-center">
+              Coming Soon
+            </CardTitle>
             <CardDescription className="text-purple-200 text-center">
               Exciting features in development
             </CardDescription>
@@ -156,7 +200,9 @@ export default function GameOnline() {
                   <span className="text-2xl">🎮</span>
                 </div>
                 <h4 className="text-white font-semibold">Ranked Matches</h4>
-                <p className="text-purple-200 text-sm">Competitive ranking system</p>
+                <p className="text-purple-200 text-sm">
+                  Competitive ranking system
+                </p>
               </div>
               <div className="text-center space-y-2">
                 <div className="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto">
@@ -170,7 +216,9 @@ export default function GameOnline() {
                   <span className="text-2xl">🏆</span>
                 </div>
                 <h4 className="text-white font-semibold">Seasonal Events</h4>
-                <p className="text-purple-200 text-sm">Special limited-time tournaments</p>
+                <p className="text-purple-200 text-sm">
+                  Special limited-time tournaments
+                </p>
               </div>
             </div>
           </CardContent>
